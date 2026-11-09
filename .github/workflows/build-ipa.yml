@@ -15,7 +15,7 @@ jobs:
           sed -i '' 's/TARGETED_DEVICE_FAMILY = "1,2"/TARGETED_DEVICE_FAMILY = 2/' ios/App/App.xcodeproj/project.pbxproj
       - name: Compila senza firma
         run: |
-          xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Release \
+xcodebuild -workspace ios/App/App.xcworkspace -scheme App -configuration Release \
             -sdk iphoneos -derivedDataPath build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" build
           mkdir Payload && cp -R build/Build/Products/Release-iphoneos/App.app Payload/
           zip -qry Taccuino.ipa Payload
