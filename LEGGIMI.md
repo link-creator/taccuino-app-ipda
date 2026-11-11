@@ -33,6 +33,12 @@ Se cancelli l'app dalla Home o i dati del sito da Safari, gli appunti si perdono
 - Il PDF esportato contiene le pagine come immagini (non testo selezionabile).
 - Scorciatoie da tastiera ⌘ funzionano solo con tastiera collegata.
 
+## Novità della versione 1.11.0 – Sincronizza con iPhone
+Nell'ingranaggio c'è la nuova voce **Sincronizza con iPhone**: invia le tue pagine (come immagini) al tuo registro Google, legato al tuo codice. Servono internet e un codice già attivato. Le volte successive vengono inviati solo i taccuini cambiati. I taccuini nel cestino non vengono inviati e quelli cancellati spariscono dall'iPhone alla sincronizzazione successiva.
+Sull'iPhone installi l'app **Taccuino Viewer** (cartella `Taccuino-iPhone`, stessa procedura GitHub), entri con lo stesso codice e vedi gli appunti in sola lettura.
+Server aggiornato: se rifai il server da zero, usa il file `Taccuino-Script-Server.gs`.
+Chi conosce il tuo codice può leggere i tuoi appunti sincronizzati: non condividerlo.
+
 ## Novità della versione 1.10.3 – codici monouso attivi
 Il registro dei codici è già creato e collegato (`www/config.js`). Un codice, una volta attivato su un iPad, non funziona più su un altro: serve internet solo al momento dell'inserimento. Lo stesso iPad può rimetterlo; un altro iPad vede "Questo codice è già stato usato".
 Il registro è un Google Foglio privato nel tuo account Google (le prime 2 righe sono segnaposto, non toccarle). Per liberare un codice (es. hai reinstallato l'app) cancella la riga corrispondente nel foglio.
